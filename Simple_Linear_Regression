@@ -1,0 +1,14 @@
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+import warnings
+%config InlineBackend.figure_format='svg'
+warnings.filterwarning('ignore')
+
+n_sample = 40 #The number of datapoints will be displayed onto the grid
+x_train = np.linspace(0, 40, n_sample)
+y_train = 3 * x_train + np.random.randn(n_sample)
+
+plt.plot(x_train, y_train, 'o')
+plt.show()
